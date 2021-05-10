@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>login</title>
+</head>
+
+<body>
+    <section class="tutor">
+        <header>
+            <div class="topnav" id="myTopnav">
+                <div class="topnavbar">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="mainbox">
+                <div class="box1">
+                    <p class="login">LOGIN</p>
+                    <p class="lets">Let’s get you</p>
+                    <p class="working">Working</p>
+                    <p class="please">Please login to start working.</p>
+
+                </div>
+                <div class="box2">
+                    <p class="log">Login</p>
+                    <p class="or">or use following methods</p>
+                    <div class="buttonstyle">
+                        <a href="#"><button class="btn1" type="button"><i class="fab fa-google-plus-g"></i> Sign in with
+                                google+</button></a>
+                        <a href="#"><button class="btn2" type="button"><i class="fab fa-facebook-f fa-1x"></i> Sign in
+                                with
+                                Facebook</button></a>
+
+                    </div>
+                    <p class="new">New to &nbsp;<a class="tutorlabs" href="#">TutorLabs?</a>&nbsp; <a class="register"
+                            href="#">Register</a> </p>
+                    <form action="/action_page.php">
+                        <p class="username"> <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Username or Email">
+                        </p>
+                        <p class="password"><label for="pwd"></label>
+                            <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Password">
+                        </p>
+                        <p class="forget"><a href="#">Forgot Password?</a></p>
+                        <div class="btnstyle">
+                            <button class="btn3" type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="foot">
+                <a href="#">Terms and Conditions &nbsp;|</a>
+                <a href="#">Privacy Policy &nbsp;|</a>
+                <a href="#">Help &nbsp; |</a>
+                <a href="#">TutorLabs Licenses &nbsp; </a>
+
+                <a href="#">| &nbsp;Partners &nbsp;|</a>
+                <p> LANGUAGE &nbsp; <label for="category"></label>
+                    <select name="language" id="language">
+                        <option value="ENGLISH">ENGLISH</option>
+                        <option value="HINDI">HINDI</option>
+                        <option value="MARTHI">MARTHI</option>
+                        <option value="other">other</option>
+                    </select>
+                </p>
+            </footer>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
